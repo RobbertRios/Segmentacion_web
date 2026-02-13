@@ -10,13 +10,18 @@ despues presiona, cntrl + shift + p para el comando ">" selecciona:
 - Anaconda3/envs/cellseg/python.exe
 - NO: Python 3.13 (Global)
 
+-python -m uvicorn app.main:app --reload
+
 utiliza
 - where python
 para saber si estamos en ese entorno
 
 y despues de esto:
 - conda activate cellseg
-- uvicorn app.main:app --reload
+- python -m uvicorn app.main:app --reload
+
+
+- python -m uvicorn --version
 
 pero si hay errores y no se selecciona ese interprete:
 SOLUCIÓN DEFINITIVA
