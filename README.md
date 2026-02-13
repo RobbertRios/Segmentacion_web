@@ -37,3 +37,4 @@ algo muy importante es que en este entorno o donde estes trabajando descargues t
 
 dependencias extras:
 - pip install python-multipart
+- pip install matplotlib
