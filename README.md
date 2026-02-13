@@ -1,12 +1,39 @@
-# Segmentacion_web
-sistema paralelo para darle resultados de segmentacion a la otra web
+ola, mucha cosas:
 
-se instalaran la siguientes dependencias:
+para iniciar el programa desde visual, haz lo siguiente
 
-pip install fastapi uvicorn opencv-python numpy
-pip install python-multipart
+primero asegurate que este el entonrno de anaconda creado:
+- Anaconda3\envs\cellseg\ (cellseg asi se llama mi entorno, elige el tuyo)
 
-para correr este servicio es:
+despues presiona, cntrl + shift + p para el comando ">" selecciona:
+- Python: select Interpreter
+- Anaconda3/envs/cellseg/python.exe
+- NO: Python 3.13 (Global)
 
-uvicorn app.main:app --reload
+utiliza
+- where python
+para saber si estamos en ese entorno
 
+y despues de esto:
+- conda activate cellseg
+- uvicorn app.main:app --reload
+
+pero si hay errores y no se selecciona ese interprete:
+SOLUCIÓN DEFINITIVA
+1️⃣ Abre Anaconda Prompt
+2️⃣ Ejecuta:
+- conda init powershell
+3️⃣ Cierra VS Code completamente
+4️⃣ Abre VS Code nuevamente
+5️⃣ En la terminal escribe:
+- conda activate cellseg
+
+y listo
+
+algo muy importante es que en este entorno o donde estes trabajando descargues todo
+- uvicorn
+- cellpose
+- etc.
+
+dependencias extras:
+- pip install python-multipart

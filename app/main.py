@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.routes.segmentacion import router as segmentacion_router
+from app.routers.segmentacion import router as segmentacion_router
 
-app = FastAPI(title="Servicio de Segmentación")
+app = FastAPI()
 
-app.include_router(segmentacion_router, prefix="/api")
+app.include_router(segmentacion_router)
